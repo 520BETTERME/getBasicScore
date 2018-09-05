@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<config>
+    <!--课程信息，name可以随便填，只要自己弄清楚就好，attribute要么为1，要么为2，值为1时，该课程为必修课，-->
+    <!--值为2时，该课程为选修课，一定要填这2个值中的一种，否则引起计算结果错误概不负责，时间有限，就不写约-->
+    <!--束文件额，全靠自觉！-->
+    <!--credit为该课程的学分-->
+    <!--score为该课程的考试成绩-->
+	<!--学分我已经写好了，自己添加成绩就好-->
+    <courses name="线代" attribute = "1">
+        <credit>3.0</credit>
+        <score></score>
+    </courses>
+
+    <courses name="物理A2" attribute = "1">
+        <credit>4.3</credit>
+        <score></score>
+    </courses>
+
+    <courses name="物理实验" attribute = "1">
+        <credit>1.5</credit>
+        <score></score>
+    </courses>
+
+    <courses name="数字逻辑" attribute = "1">
+        <credit>3.0</credit>
+        <score></score>
+    </courses>
+
+    <courses name="数字逻辑实验" attribute = "1">
+        <credit>1.0</credit>
+        <score></score>
+    </courses>
+
+    <courses name="离散" attribute = "1">
+        <credit>3</credit>
+        <score></score>
+    </courses>
+	<courses name="Linux" attribute = "2">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="Linux实验" attribute = "2">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="乒乓球" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="英语A3" attribute = "1">
+        <credit>2</credit>
+        <score></score>
+    </courses>
+	<courses name="马克思" attribute = "1">
+        <credit>2.5</credit>
+        <score></score>
+    </courses>
+	<!--替换成你的选修课-->
+	<courses name="移动互联网" attribute = "2">
+        <credit>2</credit>
+        <score></score>
+    </courses>
+	<courses name="概率论" attribute = "1">
+        <credit>3</credit>
+        <score></score>
+    </courses>
+	<courses name="计算机组成" attribute = "1">
+        <credit>3</credit>
+        <score></score>
+    </courses>
+	<courses name="计算机组成实验" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="数据库" attribute = "1">
+        <credit>3</credit>
+        <score>93</score>
+    </courses>
+	<courses name="数据库实验" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="Java程序设计" attribute = "1">
+        <credit>3</credit>
+        <score></score>
+    </courses>
+	<courses name="Java实验" attribute = "1">
+        <credit>1</credit>
+        <score>80</score>
+    </courses>
+	<courses name="Java课程设计" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="企业见习" attribute = "1">
+        <credit>2</credit>
+        <score></score>
+    </courses>
+	<courses name="嵌入式新技术" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="乒乓球2" attribute = "1">
+        <credit>1</credit>
+        <score></score>
+    </courses>
+	<courses name="英语A4" attribute = "1">
+        <credit>2</credit>
+        <score></score>
+    </courses>
+	<courses name="形式与政策" attribute = "1">
+        <credit>0.6</credit>
+        <score></score>
+    </courses>
+	<courses name="毛概" attribute = "1">
+        <credit>4</credit>
+        <score></score>
+    </courses>
+	<!--替换成你的选修课-->
+	<courses name="口才" attribute = "2">
+        <credit>2</credit>
+        <score></score>
+    </courses>
+	
+</config>
