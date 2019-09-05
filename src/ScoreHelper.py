@@ -2,7 +2,8 @@
 # @author: mdmbct
 # @data:   2019/9/3 11:28
 # @last modified by: 
-# @last modified time: 2019/9/3 14:49
+# @last modified time: 2019/9/5 8:45
+
 
 import re
 import urllib.request
@@ -158,13 +159,19 @@ cookie = http.cookiejar.CookieJar()
 opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cookie))
 
 
-# 判断操作系统类型
 def get_system_type():
+    """
+    判断操作系统类型
+    :return:
+    """
     return platform.system()
 
 
-# 判断是否联网
-def is_net_useable():
+def is_net_available():
+    """
+    判断是否联网
+    :return: True or False
+    """
     user_os = get_system_type()
     if user_os == "Windows":
         subprocess.check_call(["ping", "-n", "2", "www.baidu.com"], stdout=subprocess.PIPE)
@@ -172,8 +179,11 @@ def is_net_useable():
         subprocess.check_call(["ping", "-c", "2", "www.baidu.com"], stdout=subprocess.PIPE)
 
 
-# 登陆
 def login():
+    """
+    登录
+    :return: 登录成功与否
+    """
     # 构造表单
     params = {
         'txtUserName': sid,
@@ -212,8 +222,11 @@ def login():
         return True
 
 
-# 获取成绩
 def get_score_info():
+    """
+    获取成绩信息
+    :return: 包含成绩的list
+    """
     # 构造url
     url = ''.join([
         SCORE_PAGE_URL,
@@ -284,7 +297,7 @@ if __name__ == '__main__':
     print(scores_saved)
     if (stu_name + "_" + study_year) not in scores_saved:
         print('检查网络...')
-        is_net_useable()
+        is_net_available()
         # if not os.path.exists("data"):
         #     os.mkdir(r'data')
         sid = cf.get("account", "id")
@@ -317,3 +330,4 @@ if __name__ == '__main__':
                     )
     bsc = BasicScoreCalculator(scores)
     print("基本分：" + str(bsc.cal_basic_score()))
+
